@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DeepWire NX</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #111827;
+            --link-color: #301981;
+            --border-color: #e5e7eb;
+            --container-bg: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000000;
+                --text-color: #a8a8a8;
+                --heading-color: #fafafa;
+                --link-color: #6b4cff;
+                --border-color: #262626;
+                --container-bg: #141414;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--heading-color);
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: var(--text-color);
+            margin-bottom: 2em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy DeepWire NX</h1>
+    <p class="last-updated">Ultimo aggiornamento: 16 Marzo 2026</p>
+
+    <p>Kcisti's Enterprise gestisce l'applicazione mobile DeepWire NX. Questa pagina ti informa delle nostre politiche relative alla raccolta, all'uso e alla divulgazione dei dati personali quando usi il nostro Servizio.</p>
+
+    <p>La privacy e la sicurezza sono il fondamento di DeepWire NX. L'applicazione è progettata per operare in modo decentralizzato e utilizza la crittografia End-to-End (E2EE). Non raccogliamo, né salviamo, né analizziamo i contenuti delle tue comunicazioni.</p>
+
+    <h2>1. Dati che raccogliamo e come li utilizziamo</h2>
+    <p>Data la natura crittografata e anonima dell'app, raccogliamo il minimo indispensabile per far funzionare il Servizio. Non richiediamo registrazione tramite email o numero di telefono.</p>
+
+    <h3>A. Messaggi, File Multimediali e Crittografia</h3>
+    <p>Tutti i messaggi di testo, le note vocali, le immagini, i documenti e le posizioni GPS condivise tramite l'app sono <strong>crittografati localmente sul tuo dispositivo</strong> utilizzando lo standard AES-256-GCM.</p>
+    <ul>
+        <li>I dati viaggiano in forma illeggibile attraverso i nostri nodi di instradamento (MQTT Broker) al solo scopo di essere consegnati al destinatario.</li>
+        <li><strong>Nessun dato in chiaro viene salvato sui nostri server.</strong> Lo storico delle chat è salvato esclusivamente in locale (Local Storage) sul tuo dispositivo.</li>
+    </ul>
+
+    <h3>B. Permessi del Dispositivo (Dati Sensibili)</h3>
+    <p>Per fornire le funzionalità principali, l'app richiede l'accesso a specifiche API del dispositivo. L'accesso avviene solo previo tuo consenso esplicito:</p>
+    <ul>
+        <li><strong>Fotocamera e Galleria:</strong> Utilizzate esclusivamente per scattare foto o selezionare immagini dal dispositivo per inviarle (crittografate) nella chat.</li>
+        <li><strong>Microfono:</strong> Utilizzato esclusivamente per registrare note vocali. L'audio viene elaborato in locale e inviato in forma crittografata.</li>
+        <li><strong>Posizione (GPS):</strong> Se decidi di condividere la tua posizione in una chat, l'app accederà ai dati GPS. La posizione viene trasformata in un link crittografato e inviato al destinatario. Non tracciamo in background la tua posizione.</li>
+        <li><strong>Archiviazione/File:</strong> Utilizzata per permetterti di inviare documenti o salvare i file ricevuti.</li>
+        <li><strong>Dati Biometrici (Face ID / Impronta digitale):</strong> L'app utilizza le API biometriche native del tuo dispositivo per bloccare l'accesso a stanze specifiche. <strong>Le tue impronte o i dati facciali non lasciano mai il tuo dispositivo</strong> e non sono accessibili a noi.</li>
+    </ul>
+
+    <h3>C. Identificativi del Dispositivo e Notifiche Push</h3>
+    <p>Per garantire la ricezione dei messaggi quando l'app è in background, generiamo un ID univoco casuale (Push ID associato al tuo dispositivo). Questo ID non è collegato alla tua vera identità, ma serve al nostro fornitore di servizi di notifica per "svegliare" il tuo dispositivo quando ricevi un messaggio.</p>
+
+    <h2>2. Servizi di Terze Parti</h2>
+    <p>Condividiamo le informazioni in modo limitato e solo con i fornitori essenziali per il funzionamento tecnico dell'app:</p>
+    <ul>
+        <li><strong>OneSignal:</strong> Utilizziamo OneSignal per gestire l'invio delle notifiche push. OneSignal può raccogliere alcune informazioni standard del dispositivo (come modello, versione del sistema operativo e Push Token). Ti invitiamo a leggere la Privacy Policy di OneSignal.</li>
+        <li><strong>Infrastruttura di Rete (MQTT/Cloudflare):</strong> I pacchetti dati crittografati transitano attraverso server intermediari necessari per lo scambio dei messaggi. Questi server non possono decrittare in alcun modo il contenuto delle comunicazioni.</li>
+    </ul>
+
+    <h2>3. Conservazione e Cancellazione dei Dati</h2>
+    <ul>
+        <li><strong>Sul tuo dispositivo:</strong> Tu hai il controllo totale dei tuoi dati. L'app dispone di comandi (es. pulsante "Wipe" o comando "/wipe") che permettono di distruggere irreversibilmente e istantaneamente tutte le chiavi crittografiche, i messaggi e le impostazioni dalla memoria del tuo dispositivo. L'eliminazione dell'app cancella ugualmente tutti i dati.</li>
+        <li><strong>Sui nostri server:</strong> Poiché non esiste un database centrale, non conserviamo i tuoi messaggi. I messaggi non ancora consegnati (offline) vengono mantenuti in modo temporaneo e crittografato dal broker di rete solo per il tempo necessario alla consegna, dopodiché vengono sovrascritti.</li>
+    </ul>
+
+    <h2>4. Sicurezza dei Dati</h2>
+    <p>La sicurezza dei tuoi dati è la nostra priorità. L'infrastruttura dell'app si basa sul fatto che la chiave crittografica è derivata dal PIN che inserisci e, in caso di stanze blindate, da segreti scambiati unicamente tra i dispositivi connessi. Se perdi il PIN o il dispositivo viene ripristinato, i dati crittografati saranno irrecuperabili persino da noi.</p>
+
+    <h2>5. Privacy dei Minori</h2>
+    <p>Il nostro Servizio non si rivolge a minori di 13 anni (o l'età minima richiesta nel tuo Paese). Non raccogliamo consapevolmente informazioni personali identificabili da minori.</p>
+
+    <h2>6. Modifiche a questa Privacy Policy</h2>
+    <p>Potremmo aggiornare la nostra Privacy Policy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova Privacy Policy su questa pagina e aggiornando la "Data di ultimo aggiornamento" in alto.</p>
+
+    <h2>7. Contattaci</h2>
+    <p>Per qualsiasi domanda o dubbio riguardo a questa Privacy Policy, puoi contattarci a:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:kcisti90@gmail.com">kcisti90@gmail.com</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

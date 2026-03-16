@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,61 +94,65 @@
 <body>
 
 <div class="container">
-    <h1>Privacy Policy DeepWire NX</h1>
-    <p class="last-updated">Ultimo aggiornamento: 16 Marzo 2026</p>
+    <h1>Privacy Policy - DeepWire NX</h1>
+    <p class="last-updated">Last updated: March 16, 2026</p>
 
-    <p>Kcisti's Enterprise gestisce l'applicazione mobile DeepWire NX. Questa pagina ti informa delle nostre politiche relative alla raccolta, all'uso e alla divulgazione dei dati personali quando usi il nostro Servizio.</p>
+    <p>Kcisti's Enterprise operates the DeepWire NX mobile application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.</p>
 
-    <p>La privacy e la sicurezza sono il fondamento di DeepWire NX. L'applicazione è progettata per operare in modo decentralizzato e utilizza la crittografia End-to-End (E2EE). Non raccogliamo, né salviamo, né analizziamo i contenuti delle tue comunicazioni.</p>
+    <p>Privacy and security are the foundation of DeepWire NX. The application is designed to operate in a decentralized manner and utilizes End-to-End Encryption (E2EE). We do not collect, save, or analyze the contents of your communications.</p>
 
-    <h2>1. Dati che raccogliamo e come li utilizziamo</h2>
-    <p>Data la natura crittografata e anonima dell'app, raccogliamo il minimo indispensabile per far funzionare il Servizio. Non richiediamo registrazione tramite email o numero di telefono.</p>
+    <h2>1. Data We Collect and How We Use It</h2>
+    <p>Given the encrypted and anonymous nature of the app, we collect the bare minimum required to operate the Service. We do not require registration via email or phone number.</p>
 
-    <h3>A. Messaggi, File Multimediali e Crittografia</h3>
-    <p>Tutti i messaggi di testo, le note vocali, le immagini, i documenti e le posizioni GPS condivise tramite l'app sono <strong>crittografati localmente sul tuo dispositivo</strong> utilizzando lo standard AES-256-GCM.</p>
+    <h3>A. Messages, Media, and Encryption</h3>
+    <p>All text messages, voice notes, images, documents, and GPS locations shared through the app are <strong>encrypted locally on your device</strong> using the AES-256-GCM standard.</p>
     <ul>
-        <li>I dati viaggiano in forma illeggibile attraverso i nostri nodi di instradamento (MQTT Broker) al solo scopo di essere consegnati al destinatario.</li>
-        <li><strong>Nessun dato in chiaro viene salvato sui nostri server.</strong> Lo storico delle chat è salvato esclusivamente in locale (Local Storage) sul tuo dispositivo.</li>
+        <li>Data travels in an unreadable format through our routing nodes (MQTT Brokers) for the sole purpose of being delivered to the recipient.</li>
+        <li><strong>No plaintext data is saved on our servers.</strong> Chat history is stored exclusively locally on your device using IndexedDB (a secure local database engine).</li>
     </ul>
 
-    <h3>B. Permessi del Dispositivo (Dati Sensibili)</h3>
-    <p>Per fornire le funzionalità principali, l'app richiede l'accesso a specifiche API del dispositivo. L'accesso avviene solo previo tuo consenso esplicito:</p>
+    <h3>B. Device Permissions (Sensitive Data)</h3>
+    <p>To provide core features, the app requests access to specific device APIs. Access is granted only with your explicit consent:</p>
     <ul>
-        <li><strong>Fotocamera e Galleria:</strong> Utilizzate esclusivamente per scattare foto o selezionare immagini dal dispositivo per inviarle (crittografate) nella chat.</li>
-        <li><strong>Microfono:</strong> Utilizzato esclusivamente per registrare note vocali. L'audio viene elaborato in locale e inviato in forma crittografata.</li>
-        <li><strong>Posizione (GPS):</strong> Se decidi di condividere la tua posizione in una chat, l'app accederà ai dati GPS. La posizione viene trasformata in un link crittografato e inviato al destinatario. Non tracciamo in background la tua posizione.</li>
-        <li><strong>Archiviazione/File:</strong> Utilizzata per permetterti di inviare documenti o salvare i file ricevuti.</li>
-        <li><strong>Dati Biometrici (Face ID / Impronta digitale):</strong> L'app utilizza le API biometriche native del tuo dispositivo per bloccare l'accesso a stanze specifiche. <strong>Le tue impronte o i dati facciali non lasciano mai il tuo dispositivo</strong> e non sono accessibili a noi.</li>
+        <li><strong>Camera and Gallery:</strong> Used exclusively to take photos or select images from your device to send them (encrypted) within the chat.</li>
+        <li><strong>Microphone:</strong> Used exclusively to record voice notes. The audio is processed locally and sent in an encrypted format.</li>
+        <li><strong>Location (GPS):</strong> If you choose to share your location in a chat, the app will access your GPS data. The location is transformed into an encrypted link and sent to the recipient. We do not track your location in the background.</li>
+        <li><strong>Storage/Files:</strong> Used to allow you to send documents or save received files to your device.</li>
+        <li><strong>Biometric Data (Face ID / Fingerprint):</strong> The app uses your device's native biometric APIs to lock access to specific rooms. <strong>Your fingerprint or facial data never leaves your device</strong> and is not accessible to us.</li>
     </ul>
 
-    <h3>C. Identificativi del Dispositivo e Notifiche Push</h3>
-    <p>Per garantire la ricezione dei messaggi quando l'app è in background, generiamo un ID univoco casuale (Push ID associato al tuo dispositivo). Questo ID non è collegato alla tua vera identità, ma serve al nostro fornitore di servizi di notifica per "svegliare" il tuo dispositivo quando ricevi un messaggio.</p>
+    <h3>C. Device Identifiers and Push Notifications</h3>
+    <p>To ensure you receive messages when the app is in the background, we generate a random unique ID (Push ID associated with your device). This ID is not linked to your real identity but allows our notification service provider to "wake up" your device when a message arrives.</p>
 
-    <h2>2. Servizi di Terze Parti</h2>
-    <p>Condividiamo le informazioni in modo limitato e solo con i fornitori essenziali per il funzionamento tecnico dell'app:</p>
+    <h2>2. Third-Party Services</h2>
+    <p>We share information in a limited manner and only with essential providers for the technical operation of the app:</p>
     <ul>
-        <li><strong>OneSignal:</strong> Utilizziamo OneSignal per gestire l'invio delle notifiche push. OneSignal può raccogliere alcune informazioni standard del dispositivo (come modello, versione del sistema operativo e Push Token). Ti invitiamo a leggere la Privacy Policy di OneSignal.</li>
-        <li><strong>Infrastruttura di Rete (MQTT/Cloudflare):</strong> I pacchetti dati crittografati transitano attraverso server intermediari necessari per lo scambio dei messaggi. Questi server non possono decrittare in alcun modo il contenuto delle comunicazioni.</li>
+        <li><strong>OneSignal:</strong> We use OneSignal to manage push notifications. OneSignal may collect standard device information (such as model, OS version, and Push Token). We encourage you to review the <a href="https://onesignal.com/privacy_policy" target="_blank">OneSignal Privacy Policy</a>.</li>
+        <li><strong>Network Infrastructure (MQTT/Cloudflare):</strong> Encrypted data packets pass through intermediary servers necessary for message exchange. These servers cannot decrypt the content of the communications in any way.</li>
     </ul>
 
-    <h2>3. Conservazione e Cancellazione dei Dati</h2>
+    <h2>3. Data Retention and Deletion</h2>
     <ul>
-        <li><strong>Sul tuo dispositivo:</strong> Tu hai il controllo totale dei tuoi dati. L'app dispone di comandi (es. pulsante "Wipe" o comando "/wipe") che permettono di distruggere irreversibilmente e istantaneamente tutte le chiavi crittografiche, i messaggi e le impostazioni dalla memoria del tuo dispositivo. L'eliminazione dell'app cancella ugualmente tutti i dati.</li>
-        <li><strong>Sui nostri server:</strong> Poiché non esiste un database centrale, non conserviamo i tuoi messaggi. I messaggi non ancora consegnati (offline) vengono mantenuti in modo temporaneo e crittografato dal broker di rete solo per il tempo necessario alla consegna, dopodiché vengono sovrascritti.</li>
+        <li><strong>On your device:</strong> You have total control over your data. The app features commands (e.g., the "Wipe" button or the `/wipe` command) that instantly and irreversibly destroy all cryptographic keys, messages, and settings from your device's memory. Deleting the app also permanently erases all data.</li>
+        <li><strong>On our servers:</strong> Because there is no central database, we do not store your messages. Undelivered (offline) messages are held temporarily and encrypted by the network broker only for the time necessary for delivery, after which they are overwritten.</li>
     </ul>
 
-    <h2>4. Sicurezza dei Dati</h2>
-    <p>La sicurezza dei tuoi dati è la nostra priorità. L'infrastruttura dell'app si basa sul fatto che la chiave crittografica è derivata dal PIN che inserisci e, in caso di stanze blindate, da segreti scambiati unicamente tra i dispositivi connessi. Se perdi il PIN o il dispositivo viene ripristinato, i dati crittografati saranno irrecuperabili persino da noi.</p>
+    <h2>4. User Rights (GDPR & Privacy Laws)</h2>
+    <p>Because DeepWire NX is completely anonymous and we do not store your personal data on our servers, we have no way to access, extract, or delete your information remotely. Therefore, to exercise your right to be forgotten or to erase your data, you must use the deletion features (such as the Wipe function) directly within the app on your device.</p>
 
-    <h2>5. Privacy dei Minori</h2>
-    <p>Il nostro Servizio non si rivolge a minori di 13 anni (o l'età minima richiesta nel tuo Paese). Non raccogliamo consapevolmente informazioni personali identificabili da minori.</p>
+    <h2>5. Data Security</h2>
+    <p>The security of your data is our priority. The app's infrastructure relies on the fact that the cryptographic key is derived from the PIN you enter and, in the case of locked rooms, from secrets exchanged solely between connected devices. If you lose your PIN or the device is reset, the encrypted data will be unrecoverable, even by us.</p>
 
-    <h2>6. Modifiche a questa Privacy Policy</h2>
-    <p>Potremmo aggiornare la nostra Privacy Policy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova Privacy Policy su questa pagina e aggiornando la "Data di ultimo aggiornamento" in alto.</p>
+    <h2>6. Children's Privacy</h2>
+    <p>Our Service is not directed to anyone under the age of 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personally identifiable information from children.</p>
 
-    <h2>7. Contattaci</h2>
-    <p>Per qualsiasi domanda o dubbio riguardo a questa Privacy Policy, puoi contattarci a:</p>
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
     <ul>
+        <li><strong>Kcisti's Enterprise</strong></li>
         <li><strong>Email:</strong> <a href="mailto:kcisti90@gmail.com">kcisti90@gmail.com</a></li>
     </ul>
 </div>

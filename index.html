@@ -95,17 +95,17 @@
 
 <div class="container">
     <h1>Privacy Policy - DeepWire NX</h1>
-    <p class="last-updated">Last updated: March 16, 2026</p>
+    <p class="last-updated">Last updated: March 18, 2026</p>
 
     <p>Kcisti's Enterprise operates the DeepWire NX mobile application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.</p>
 
-    <p>Privacy and security are the foundation of DeepWire NX. The application is designed to operate in a decentralized manner and utilizes End-to-End Encryption (E2EE). We do not collect, save, or analyze the contents of your communications.</p>
+    <p>Privacy and security are the foundation of DeepWire NX. The application is designed to operate in a decentralized manner and utilizes <strong>Symmetric Passphrase-Based Encryption (PSK)</strong>. The security of your communications relies entirely on the strength and complexity of the PIN you choose to share with your peers. We do not collect, save, or analyze the contents of your communications.</p>
 
     <h2>1. Data We Collect and How We Use It</h2>
     <p>Given the encrypted and anonymous nature of the app, we collect the bare minimum required to operate the Service. We do not require registration via email or phone number.</p>
 
     <h3>A. Messages, Media, and Encryption</h3>
-    <p>All text messages, voice notes, images, documents, and GPS locations shared through the app are <strong>encrypted locally on your device</strong> using the AES-256-GCM standard.</p>
+    <p>All text messages, voice notes, images, documents, and GPS locations shared through the app are <strong>encrypted locally on your device</strong> using the AES-256-GCM standard. The encryption key is dynamically derived from your shared PIN using PBKDF2 with unique cryptographic salts.</p>
     <ul>
         <li>Data travels in an unreadable format through our routing nodes (MQTT Brokers) for the sole purpose of being delivered to the recipient.</li>
         <li><strong>No plaintext data is saved on our servers.</strong> Chat history is stored exclusively locally on your device using IndexedDB (a secure local database engine).</li>
@@ -141,7 +141,7 @@
     <p>Because DeepWire NX is completely anonymous and we do not store your personal data on our servers, we have no way to access, extract, or delete your information remotely. Therefore, to exercise your right to be forgotten or to erase your data, you must use the deletion features (such as the Wipe function) directly within the app on your device.</p>
 
     <h2>5. Data Security</h2>
-    <p>The security of your data is our priority. The app's infrastructure relies on the fact that the cryptographic key is derived from the PIN you enter and, in the case of locked rooms, from secrets exchanged solely between connected devices. If you lose your PIN or the device is reset, the encrypted data will be unrecoverable, even by us.</p>
+    <p>The security of your data is our priority. The app's infrastructure relies on the fact that the cryptographic key is derived from the PIN you enter. <strong>Please note:</strong> Since the app uses symmetric encryption based on a pre-shared passphrase, sharing a weak PIN or sharing it over insecure channels can compromise the privacy of your room. If you lose your PIN or the device is reset, the encrypted data will be unrecoverable, even by us.</p>
 
     <h2>6. Children's Privacy</h2>
     <p>Our Service is not directed to anyone under the age of 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personally identifiable information from children.</p>
